@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function checkFilled(obj){
+            if(obj.value.trim()===""){
+                alert("아이디를 입력하시오.");
+                setTimeout(function() {
+                    obj.focus();
+                }, 3000)
+            }
+        }
+    </script>
+</head>
+<body>
+    <body onload="document.getElementById('userid').focus();">
+        <h3>로그인 폼</h3>
+        <form>
+            아이디: <input type="text" id="userid" onblur="checkFilled(this)"><br><br>
+            비번: <input type="password" id="password" /><br><br>
+            <button type="submit">로그인</button>
+        </form>
+    </body>
+</body>
+</html>

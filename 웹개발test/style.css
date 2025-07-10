@@ -1,0 +1,146 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    margin: 20px 0 10px;
+  }
+  
+  form,
+  .add-movie-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  #newTitle {
+    padding: 10px;
+    width: 80%;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    margin: 10px 0;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #00bcd4;
+    color: white;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  button:hover {
+    background-color: #0097a7;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    margin: 5px 0;
+    font-size: 15px;
+  }
+  
+  hr {
+    width: 100%;
+    margin: 30px 0;
+    border-color: #444;
+  }
+  
+  .movie-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 30px;
+    justify-content: center;
+  }
+  
+  .poster-and-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+  }
+  
+  #moviePoster {
+    width: 300px;
+    border-radius: 12px;
+    margin: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  #movieDescription {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #ccc;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  .movie-ost {
+    flex: 1;
+    text-align: left;
+  }
+  
+  #ostList a {
+    color: #00bcd4;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  #ostList a:hover {
+    color: #80deea;
+    text-decoration: underline;
+  }
+  
+  .movie-people {
+    margin-top: 20px;
+    text-align: left;
+    color: #eee;
+  }
+  
+  #peopleList li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 15px;
+  }
+  
+  #peopleList img {
+    width: 60px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 12px;
+  }  

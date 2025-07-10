@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>영화 검색</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="cinema-background">
+      <div class="popcorn-animation">🍿</div>
+      <div class="film-strip"></div>
+      <div class="spotlight"></div>
+    </div>
+    
+    <div class="container">
+        <div id="welcomeSection" class="welcome-section">
+          <div class="cinema-screen">
+            <div class="screen-content">
+              <div class="clapperboard">
+                <div class="clapper-top"></div>
+                <div class="clapper-bottom">
+                  <div class="clapper-text">Jieun's Cinema</div>
+                </div>
+              </div>
+              <h1>🎬 CINEMA PARADISE</h1>
+              <p class="subtitle">영화와 OST의 모든 것을 찾아보세요</p>
+            </div>
+          </div>
+          <div class="name-input-form">
+            <div class="ticket-input">
+            <input type="text" id="userNameInput" placeholder="이름을 입력해주세요...">
+            <button id="enterBtn" class="ticket-button">
+              <span>🎫 입장하기</span>
+            </button>
+            </div>
+          </div>
+        </div>
+        
+        <div id="mainSection" class="main-section" style="display: none;">
+          <div class="cinema-header">
+            <div class="marquee-lights">
+              <div class="light"></div>
+              <div class="light"></div>
+              <div class="light"></div>
+              <div class="light"></div>
+              <div class="light"></div>
+            </div>
+            <h1>🎬 MOVIE SEARCH</h1>
+            <div class="user-greeting">
+              <span id="userGreeting"></span>
+            </div>
+          </div>
+      
+          <form id="searchForm" action="result.html" method="GET">
+            <div class="search-container">
+            <div class="search-box">
+              <div class="film-reel left"></div>
+            <input type="text" id="searchInput" name="movie" placeholder="영화, 제목을 입력하세요...">
+              <button type="submit" class="search-btn">🔍 검색</button>
+              <div class="film-reel right"></div>
+            </div>
+            </div>
+          </form>
+      
+          <div id="movieList" class="movie-section">
+            <div class="section-header">
+              <div class="popcorn-icon">🍿</div>
+              <h2>상영 중인 영화</h2>
+              <div class="popcorn-icon">🍿</div>
+            </div>
+            <div class="movie-grid">
+              <ul id="movieListUl"></ul>
+            </div>
+          </div>
+       
+          <div class="divider">
+            <div class="film-strip-divider"></div>
+          </div>
+      
+          <div class="add-movie-form">
+            <div class="section-header">
+              <div class="clapperboard-small">🎬</div>
+              <h2>원하는 영화 추가하기</h2>
+              <div class="clapperboard-small">🎬</div>
+            </div>
+            <div class="add-movie-container">
+            <div class="ticket-form">
+            <input id="newTitle" type="text" placeholder="영화 제목">
+              <button id="addMovieBtn" class="add-btn">➕ 추가</button>
+              <button id="resetUserMoviesBtn" class="reset-btn">🗑️ 초기화</button>
+            </div>
+            </div>
+          </div>
+      
+          <div id="userMovieList" class="movie-section">
+            <div class="section-header">
+              <div class="star-icon">⭐</div>
+              <h2>나만의 영화 목록</h2>
+              <div class="star-icon">⭐</div>
+            </div>
+            <div class="user-movie-list">
+              <ul id="userMovieListUl"></ul>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

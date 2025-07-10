@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>배송 정보</legend>
+        <ul>
+            <li>이름<input type="text"></li>
+            <li>배송 주소<input type="text"></li>
+            <li>이메일<input type="email"></li>
+            <li>연락처<input type="number"></li>
+        </ul>
+        <input type="button" value="전송">
+    </fieldset>
+    <fieldset>
+        <legend>배송 정보</legend>
+        <ul>
+            <li>주문 상품<input type="text" value="상품용 3kg" readonly></li>
+            <li>이름<input type="text"></li>
+            <li>주소<input type="text"></li>
+            <li>이메일<input type="email"></li>
+            <li>연락처<input placeholder="하이픈 빼고 입력"></li>
+            <li>배송 지정 <label><input type="date" id="end"></label>(주문일로부터 최소 3일 이후)</li>
+        </ul>
+    </fieldset>
+    <input type="submit" value="주문하기">
+    <input type="submit" value="취소하기"><br>
+
+    <fieldset>
+        <legend>상품 선택</legend>
+        <p><strong>주문할 상품을 선택해 주세요.</strong></p>
+        <ul>
+            <input type="checkbox">선물용 3kg <input type="checkbox">선물용 5kg <input type="checkbox">가정용 3kg <input type="checkbox">가정용 5kg
+        </ul>
+
+        <p><strong>포장 선택</strong></p>
+        <ul>
+            <label><input type="radio">선물 포장 <input type="radio">선물 포장 안됨</label>
+        </ul>
+    </fieldset>
+
+</body>
+</html>

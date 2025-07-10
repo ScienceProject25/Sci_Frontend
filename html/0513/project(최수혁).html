@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function stair() {
+            const container = document.getElementById("boxContainer");
+
+            const positions = [
+                { top: 20, left: 20, color: "lightblue"},
+                { top: 40, left: 80, color: "lightcoral"},
+                { top: 60, left: 120, color: "lightgreen"},
+            ];
+
+            positions.forEach[(pos, i) => {
+                const box = document.createElement("div");
+                box.className = "box";
+                box.textContent = "Box" + (i + 1);
+                box.style.top = pos.top + "px";
+                box.style.left = pos.left = "px";
+                box.style.backgroundColor = pos.color;
+                container.appendChild(box);
+            }];
+        }
+        stair();
+    </script>
+</body>
+</html>

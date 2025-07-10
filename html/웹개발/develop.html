@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>영화 & OST 검색</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="develop.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎬 영화 & OST 검색</h1>
+    <input type="text" id="searchInput" placeholder="영화, 제목을 입력하세요..." />
+    <button id="searchBtn">검색</button>
+
+    <div id="movieList">
+      <h2>등록된 영화 목록</h2>
+      <ul id="movieListUl"></ul>
+    </div>
+    
+    <br><hr><br>
+
+    <div class="add-movie-form">
+      <h2>+ 더 추가했으면 하는 영화 있어?</h2>
+      <input id="newTitle" type="text" placeholder="영화 제목">
+      <button id="addMovieBtn">영화 추가</button>
+      <button id="resetUserMoviesBtn">초기화</button>
+    </div>
+
+    <br>
+    <div id="userMovieList">
+      <h2>원하는 영화 목록</h2>
+      <ul id="userMovieListUl"></ul>
+    </div>
+    
+    <hr>
+
+    <div id="result" class="hidden">
+      <h2 id="movieTitle"></h2>
+      
+      <div class="movie-info"> 
+        <div class="poster-and-description">
+          <img id="moviePoster" src="" alt="선택한 영화의 포스터" />
+          <p id="movieDescription"></p>
+        </div>
+    
+        <div class="movie-ost">
+          <h3 id="ostTitle">🎵 OST 목록</h3>
+          <ul id="ostList"></ul>
+        
+          <div class="movie-people">
+            <h3 id="peopleTitle">👤 등장인물</h3>
+            <ul id="peopleList"></ul>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="develop.js"></script>
+</body>
+</html>
