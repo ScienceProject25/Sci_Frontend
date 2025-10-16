@@ -1,0 +1,13 @@
+{
+    "name": "infectious-disease-education",
+    "version": "1.0.0",
+    "description": "감염병 전염 패턴 교육 웹사이트",
+    "main": "index.html",
+    "scripts": {
+      "dev": "npx serve . -p 3000",
+      "start": "npx serve . -p 3000"
+    },
+    "keywords": ["education", "infectious-disease", "visualization"],
+    "author": "",
+    "license": "MIT"
+  }

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>감염병 전염 패턴 교육 웹사이트</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mainPage" class="page active">
+        <div class="container">
+            <div class="main-content">
+                <div class="header">
+                    <div class="icon">🔬</div>
+                    <h1>감염병 전염 패턴 연구소</h1>
+                    <p>바이러스, 세균, 원생동물의 감염 패턴을 탐구해보세요</p>
+                </div>
+                
+                <div class="form-container">
+                    <form id="nameForm">
+                        <div class="input-group">
+                            <label for="userName">이름을 입력해주세요</label>
+                            <input type="text" id="userName" placeholder="예: 김연구" required>
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            연구소 입장하기
+                            <span class="arrow">→</span>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="footer-text">
+                    <p>교육 목적으로 제작된 감염병 정보 사이트입니다</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard Page -->
+    <div id="dashboardPage" class="page">
+        <div class="header-bar">
+            <div class="container">
+                <div class="header-content">
+                    <button id="backBtn" class="back-btn">←</button>
+                    <div class="welcome">
+                        <h1 id="welcomeText">안녕하세요! 👋</h1>
+                        <p>감염병 정보를 탐색해보세요</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="search-section">
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="searchInput" placeholder="감염병 이름, 병원체, 증상으로 검색하세요...">
+                </div>
+                
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">
+                        <span class="icon">🔍</span>
+                        전체
+                    </button>
+                    <button class="filter-btn" data-category="virus">
+                        <span class="icon">🦠</span>
+                        바이러스
+                    </button>
+                    <button class="filter-btn visualization-btn" data-type="virus">
+                        <span class="icon">📊</span>
+                        시각화
+                    </button>
+                    <button class="filter-btn" data-category="bacteria">
+                        <span class="icon">🔵</span>
+                        세균
+                    </button>
+                    <button class="filter-btn visualization-btn" data-type="bacteria">
+                        <span class="icon">📊</span>
+                        시각화
+                    </button>
+                    <button class="filter-btn" data-category="protozoa">
+                        <span class="icon">🟢</span>
+                        원생동물
+                    </button>
+                    <button class="filter-btn visualization-btn" data-type="protozoa">
+                        <span class="icon">📊</span>
+                        시각화
+                    </button>
+                </div>
+            </div>
+
+            <div class="results-header">
+                <p id="resultsCount">15개의 감염병 정보를 찾았습니다</p>
+            </div>
+
+            <div id="diseaseGrid" class="disease-grid">
+                <!-- Disease cards will be populated by JavaScript -->
+            </div>
+
+            <div id="noResults" class="no-results hidden">
+                <div class="no-results-icon">🔍</div>
+                <h3>검색 결과가 없습니다</h3>
+                <p>다른 검색어나 카테고리를 시도해보세요</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Transmission Page -->
+    <div id="transmissionPage" class="page">
+        <div class="header-bar">
+            <div class="container">
+                <div class="header-content">
+                    <button id="transmissionBackBtn" class="back-btn">←</button>
+                    <div class="transmission-header">
+                        <div id="transmissionIcon" class="transmission-icon">🦠</div>
+                        <div>
+                            <h1 id="transmissionTitle">바이러스 전염 패턴 시뮬레이션</h1>
+                            <p id="transmissionSubtitle">바이러스가 어떻게 감염되고 확산되는지 단계별로 확인해보세요</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="transmission-content">
+                <div class="simulation-area">
+                    <div class="visualization-box">
+                        <div id="currentStepIcon" class="step-icon">🦠 → 👤</div>
+                        <h2 id="currentStepTitle">단계 1: 바이러스 침입</h2>
+                        <p id="currentStepDescription">바이러스가 호흡기나 접촉을 통해 체내로 침입합니다.</p>
+                    </div>
+
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div id="progressFill" class="progress-fill"></div>
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <button id="playPauseBtn" class="btn-primary">
+                            <span id="playPauseIcon">▶️</span>
+                            <span id="playPauseText">재생</span>
+                        </button>
+                        <button id="resetBtn" class="btn-secondary">
+                            <span>🔄</span>
+                            처음부터
+                        </button>
+                    </div>
+
+                    <div id="stepsList" class="steps-list">
+                        <!-- Steps will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="info-panel">
+                    <div class="info-card">
+                        <h3 id="typeCharacteristics">바이러스 특징</h3>
+                        <div id="characteristicsList" class="characteristics">
+                            <!-- Characteristics will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>예방 방법</h3>
+                        <div class="prevention-list">
+                            <div class="prevention-item">
+                                <span class="bullet">•</span>
+                                <span>손 씻기 및 개인위생 관리</span>
+                            </div>
+                            <div class="prevention-item">
+                                <span class="bullet">•</span>
+                                <span>마스크 착용 (호흡기 감염 시)</span>
+                            </div>
+                            <div class="prevention-item">
+                                <span class="bullet">•</span>
+                                <span>안전한 음식과 물 섭취</span>
+                            </div>
+                            <div class="prevention-item">
+                                <span class="bullet">•</span>
+                                <span>예방접종 (가능한 경우)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="importantNotice" class="info-card notice">
+                        <h3>💡 알아두세요!</h3>
+                        <p id="noticeText">바이러스는 항생제로 치료할 수 없으며, 예방이 가장 중요합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Disease Detail Page -->
+    <div id="diseaseDetailPage" class="page">
+        <div class="header-bar">
+            <div class="container">
+                <div class="header-content">
+                    <button id="diseaseDetailBackBtn" class="back-btn">←</button>
+                    <div class="disease-detail-header">
+                        <div id="diseaseDetailIcon" class="disease-detail-icon">🦠</div>
+                        <div>
+                            <h1 id="diseaseDetailTitle">COVID-19</h1>
+                            <div class="disease-meta">
+                                <span id="diseaseType" class="type-badge">바이러스</span>
+                                <span id="diseaseRegion" class="meta-item">📍 전 세계</span>
+                                <span id="diseaseYear" class="meta-item">📅 2019</span>
+                                <span class="meta-item">위험도 <span id="diseaseSeverity" class="severity-dot high"></span> 높음</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="disease-detail-content">
+                <div class="main-content">
+                    <div class="overview-card">
+                        <h2>질병 개요</h2>
+                        <div class="overview-grid">
+                            <div class="overview-section">
+                                <h3>병원체</h3>
+                                <p id="diseasePathogen">SARS-CoV-2</p>
+                                
+                                <h3>전파 경로</h3>
+                                <div id="diseaseTransmission" class="transmission-tags">
+                                    <!-- Transmission methods will be populated -->
+                                </div>
+                            </div>
+                            
+                            <div class="overview-section">
+                                <h3>주요 증상</h3>
+                                <div id="diseaseSymptoms" class="symptoms-list">
+                                    <!-- Symptoms will be populated -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="simulation-card">
+                        <h2>전염 과정 시뮬레이션</h2>
+                        
+                        <div class="disease-visualization">
+                            <div id="diseaseStepIcon" class="disease-step-icon">🦠 → 👤</div>
+                            <h3 id="diseaseStepTitle">단계 1: 바이러스 침입</h3>
+                            <p id="diseaseStepDescription">COVID-19 바이러스가 비말전파, 공기전파, 접촉전파을 통해 체내로 침입합니다.</p>
+                        </div>
+
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div id="diseaseProgressFill" class="progress-fill"></div>
+                            </div>
+                        </div>
+
+                        <div class="controls">
+                            <button id="diseasePlayPauseBtn" class="btn-primary">
+                                <span id="diseasePlayPauseIcon">▶️</span>
+                                <span id="diseasePlayPauseText">재생</span>
+                            </button>
+                            <button id="diseaseResetBtn" class="btn-secondary">
+                                <span>🔄</span>
+                                처음부터
+                            </button>
+                        </div>
+
+                        <div id="diseaseStepsList" class="disease-steps-grid">
+                            <!-- Disease-specific steps will be populated -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <div class="info-card">
+                        <h3>빠른 정보</h3>
+                        <div class="quick-info">
+                            <div class="info-item">
+                                <span class="info-icon">🔬</span>
+                                <div>
+                                    <p class="info-label">병원체 유형</p>
+                                    <p id="quickType" class="info-value">바이러스</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">👥</span>
+                                <div>
+                                    <p class="info-label">발생 지역</p>
+                                    <p id="quickRegion" class="info-value">전 세계</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">📅</span>
+                                <div>
+                                    <p class="info-label">보고 연도</p>
+                                    <p id="quickYear" class="info-value">2019</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">🛡️</span>
+                                <div>
+                                    <p class="info-label">위험도</p>
+                                    <div class="severity-info">
+                                        <span id="quickSeverityDot" class="severity-dot high"></span>
+                                        <span id="quickSeverityText" class="info-value">높음</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>예방 수칙</h3>
+                        <div class="prevention-list">
+                            <div class="prevention-item">
+                                <span class="bullet">•</span>
+                                <span>손 씻기 및 개인위생 철저</span>
+                            </div>
+                            <div class="prevention-item">
+                                <span class="bullet">•</span>
+                                <span>마스크 착용 (호흡기 감염 시)</span>
+                            </div>
+                            <div class="prevention-item">
+                                <span class="bullet">•</span>
+                                <span>안전한 음식과 물 섭취</span>
+                            </div>
+                            <div class="prevention-item">
+                                <span class="bullet">•</span>
+                                <span>예방접종 (가능한 경우)</span>
+                            </div>
+                            <div class="prevention-item">
+                                <span class="bullet">•</span>
+                                <span>면역력 강화 및 건강 관리</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="diseaseNotice" class="info-card notice">
+                        <h3>⚠️ 중요 안내</h3>
+                        <p class="notice-main">이 정보는 교육 목적으로 제공됩니다. 실제 증상이 있다면 의료진과 상담하세요.</p>
+                        <p id="diseaseNoticeText" class="notice-sub">바이러스 감염은 항생제로 치료할 수 없으며, 예방과 대증치료가 중요합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

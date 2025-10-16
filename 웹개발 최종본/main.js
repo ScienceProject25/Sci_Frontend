@@ -79,8 +79,132 @@ const defaultMovieData = {
         {name: "리바이 아커만", actor: "リヴァイ・アッカーマン", photo: "https://zrr.kr/ovCzAa"},
         {name: "코니 스프링어", actor: "コニー・スプリンガー", photo: "https://zrr.kr/VscOje"}
       ]
-    }
-  };
+    },
+    "오펜하이머": {
+    "description": "핵무기의 아버지, 로버트 오펜하이머의 삶과 고뇌를 그린 크리스토퍼 놀란 감독의 전기 드라마",
+    "poster": "https://i.namu.wiki/i/wr-UKPub5BAEyeEsxzszuMRFRxlwxUAopqBBN3Hak5Ui-f5BYcyjdDPSksbJks4HVoA53jCY1sbjLe1Qztamrw.webp",
+    "ost": [
+      { "title": "Oppenheimer - Ludwig Göransson", "url": "https://www.youtube.com/watch?v=FqHk8sZxYwM" },
+      { "title": "The Fission of the Atom", "url": "https://www.youtube.com/results?search_query=The+Fission+of+the+Atom" }
+    ],
+    "people": [
+      { "name": "로버트 오펜하이머", "actor": "킬리언 머피", "photo": "https://zrr.kr/3G7G7F" },
+      { "name": "킴버리 하트", "actor": "에밀리 블런트", "photo": "https://zrr.kr/4J8H9K" },
+      { "name": "루이스 스트라우스", "actor": "로버트 다우니 주니어", "photo": "https://zrr.kr/5L9I0J" }
+    ]
+  },
+  "듄: 파트 원": {
+    "description": "프랭크 허버트의 SF 대작을 원작으로 한 웅장한 스페이스 오페라",
+    "poster": "https://i.namu.wiki/i/1ZOJDCSjLBR4E0u7zMvv1puGcSQ_GhvjLnvO4lYOnnVWch8LBNMQKvjislmbYghU4kjS_2E0Kz-_3e7NmiovVw.webp",
+    "ost": [
+      { "title": "Paul's Dream - Hans Zimmer", "url": "https://www.youtube.com/watch?v=3kD8uO0Z7eM" },
+      { "title": "The One", "url": "https://www.youtube.com/results?search_query=The+One+Dune+OST" }
+    ],
+    "people": [
+      { "name": "폴 아트레이드", "actor": "티모시 샬라메", "photo": "https://zrr.kr/6M0J1K" },
+      { "name": "제시카", "actor": "리베카 퍼거슨", "photo": "https://zrr.kr/7N1K2L" },
+      { "name": "듄", "actor": "제이슨 모모아", "photo": "https://zrr.kr/8O2L3M" }
+    ]
+  },
+  "더 배트맨": {
+    "description": "어두운 분위기 속에서 범죄와 싸우는 배트맨의 초년기를 그린 다크한 슈퍼히어로 영화",
+    "poster": "https://i.namu.wiki/i/ynRcsXIkhqhGtK-QTZlQCA6u58sdE1AagJHviCDy5-vrAHcBtS9Zx6WzKsActVTZi7LQt0OeE-l9IDIyxY-wxg.webp",
+    "ost": [
+      { "title": "Something in the Way - Nirvana", "url": "https://www.youtube.com/watch?v=rfUYuLRR5l4" },
+      { "title": "The Batman Theme", "url": "https://www.youtube.com/results?search_query=The+Batman+Theme+OST" }
+    ],
+    "people": [
+      { "name": "브루스 웨인 / 배트맨", "actor": "로버트 패틴슨", "photo": "https://zrr.kr/9P3M4N" },
+      { "name": "셀리나 카일 / 캣우먼", "actor": "조안 크라비츠", "photo": "https://zrr.kr/0Q4N5O" },
+      { "name": "리들러", "actor": "폴 다노", "photo": "https://zrr.kr/1R5O6P" }
+    ]
+  },
+  "아바타: 물의 길": {
+    "description": "판도라의 바다를 배경으로 펼쳐지는 제이크와 네이티리의 새로운 모험",
+    "poster": "https://i.namu.wiki/i/EHZQffmrWR6mvuDFZFVfSLDZnux6vbMliyinxYrlRz_Q698fuDtFMDBDNc8wCcn7fuqbaAJEBUE-3-tKbDAugw.webp",
+    "ost": [
+      { "title": "The Way of Water - Simon Franglen", "url": "https://www.youtube.com/watch?v=Z3Rz7XzV2kI" },
+      { "title": "A New World", "url": "https://www.youtube.com/results?search_query=A+New+World+Avatar+OST" }
+    ],
+    "people": [
+      { "name": "제이크 설리", "actor": "샘 워싱턴", "photo": "https://zrr.kr/2S6P7Q" },
+      { "name": "네이티리", "actor": "조 샐다나", "photo": "https://zrr.kr/3T7Q8R" },
+      { "name": "툴리", "actor": "케이트 윈슬렛", "photo": "https://zrr.kr/4U8R9S" }
+    ]
+  },
+  "파묘": {
+    "description": "장재현 감독의 오컬트 호러 영화로, 무속과 미신을 소재로 한 미스터리한 이야기",
+    "poster": "https://upload.wikimedia.org/wikipedia/ko/thumb/4/40/%ED%8C%8C%EB%AC%98.jpg/250px-%ED%8C%8C%EB%AC%98.jpg",
+    "ost": [
+      { "title": "파묘 OST", "url": "https://www.youtube.com/results?search_query=%ED%8C%8C%EB%AC%98+OST" }
+    ],
+    "people": [
+      { "name": "주인공", "actor": "배우 이름", "photo": "https://example.com/actor.jpg" }
+    ]
+  },
+  "서브스턴스": {
+    "description": "광기와 집착, 절망을 고어와 호러 장르로 풀어낸 파격적인 영화",
+    "poster": "https://upload.wikimedia.org/wikipedia/ko/thumb/6/60/%EC%84%9C%EB%B8%8C%EC%8A%A4%ED%84%B4%EC%8A%A4_%ED%8F%AC%EC%8A%A4%ED%84%B0.jpeg/250px-%EC%84%9C%EB%B8%8C%EC%8A%A4%ED%84%B4%EC%8A%A4_%ED%8F%AC%EC%8A%A4%ED%84%B0.jpeg",
+    "ost": [
+      { "title": "서브스턴스 OST", "url": "https://www.youtube.com/results?search_query=%EC%84%9C%EB%B8%8C%EC%8A%A4%ED%84%B4%EC%8A%A4+OST" }
+    ],
+    "people": [
+      { "name": "주인공", "actor": "배우 이름", "photo": "https://example.com/actor.jpg" }
+    ]
+  },
+  "여행자의 필요": {
+    "description": "홍상수 감독의 31번째 장편영화로, 언어와 언어 사이의 시간을 물색하는 번역가의 이야기",
+    "poster": "https://i.namu.wiki/i/CEtUoGh94TP9jZmv6dfHi1AT8MjVq507Zt9FeLq2jVZEWxwtTvDjEOsuXN5JZPgUFgwAi_3W_jSNsK93vLJ1tQ.webp",
+    "ost": [
+      { "title": "여행자의 필요 OST", "url": "https://www.youtube.com/results?search_query=%EC%97%AC%ED%96%89%EC%9E%90%EC%9D%98+%ED%95%84%EC%9A%94+OST" }
+    ],
+    "people": [
+      { "name": "이리스", "actor": "이자벨 위페르", "photo": "https://zrr.kr/9P3M4N" },
+      { "name": "윤동주", "actor": "배우 이름", "photo": "https://example.com/actor.jpg" }
+    ]
+  },
+  "신과 함께: 죄와 벌": {
+  "description": "한국 전통 사후 세계를 배경으로, 사망한 주인공이 49일간의 심판을 받으며 펼쳐지는 판타지 드라마.",
+  "poster": "https://i.namu.wiki/i/q04OiJfNazupCjGmgO9PGYxKTnvqzTYoWvUicjeGf3s3opa9N7xNW_XOn7g9onwXBMwJlxscRSoFBMz8j-H4Aw.webp",
+  "ost": [
+    { "title": "그대와 함께 - 김동률", "url": "https://www.youtube.com/watch?v=example" },
+    { "title": "신과 함께 - 김태성", "url": "https://www.youtube.com/watch?v=example" }
+    ],
+  "people": [
+    { "name": "김자홍", "actor": "하정우", "photo": "https://zrr.kr/example1" },
+    { "name": "강림", "actor": "차태현", "photo": "https://zrr.kr/example2" },
+    { "name": "해원맥", "actor": "주지훈", "photo": "https://zrr.kr/example3" },
+    { "name": "염라대왕", "actor": "이정재", "photo": "https://zrr.kr/example4" }
+    ]
+  },
+  "드래곤 길들이기": {
+  "description": "바이킹 소년과 그의 드래곤 친구가 함께 성장하며 우정을 쌓아가는 애니메이션 영화.",
+  "poster": "https://upload.wikimedia.org/wikipedia/ko/d/d7/%EB%93%9C%EB%9E%98%EA%B3%A4%EA%B8%B8%EB%93%A4%EC%9D%B4%EA%B8%B02025.jpg",
+  "ost": [
+    { "title": "Test Drive - John Powell", "url": "https://www.youtube.com/watch?v=example" },
+    { "title": "Romantic Flight - John Powell", "url": "https://www.youtube.com/watch?v=example" }
+    ],
+  "people": [
+    { "name": "히컵", "actor": "제이 바루첼", "photo": "https://zrr.kr/example1" },
+    { "name": "아스트리드", "actor": "아메리카 페레라", "photo": "https://zrr.kr/example2" },
+    { "name": "스토익", "actor": "제라드 버틀러", "photo": "https://zrr.kr/example3" }
+    ]
+  },
+  "극한직업": {
+  "description": "마약 밀매 조직을 추적하던 형사들이 치킨집을 운영하며 벌어지는 코믹한 상황을 그린 영화.",
+  "poster": "https://i.namu.wiki/i/usx6eksAOUgWAnzvUZNwHyFeIV39SkORkCjBRTm4nh-bxFZ4pnY7x_arMjVDPV7i3s71_DuYVla0Zfr7CqfSZw.webp",
+  "ost": [
+    { "title": "극한직업 OST", "url": "https://www.youtube.com/results?search_query=%EA%B7%B9%ED%95%9C%EC%A7%81%EC%97%85+OST" }
+    ],
+  "people": [
+    { "name": "고반장", "actor": "류승룡", "photo": "https://zrr.kr/example1" },
+    { "name": "장형사", "actor": "이하늬", "photo": "https://zrr.kr/example2" },
+    { "name": "마형사", "actor": "진선규", "photo": "https://zrr.kr/example3" },
+    { "name": "임형사", "actor": "이동휘", "photo": "https://zrr.kr/example4" },
+    { "name": "오형사", "actor": "공명", "photo": "https://zrr.kr/example5" }
+    ]
+  }
+};
   
   // 등록된 영화 목록
   function displayMovieList() {
@@ -179,21 +303,17 @@ const defaultMovieData = {
     }
   });
   
-  // 이벤트 리스너 등록
   document.getElementById("addMovieBtn").addEventListener("click", addUserMovie);
   document.getElementById("resetUserMoviesBtn").addEventListener("click", resetUserMovies);
   
-  // Enter 키로 영화 추가
   document.getElementById("newTitle").addEventListener("keypress", function(e) {
     if (e.key === "Enter") {
       addUserMovie();
     }
   });
   
-  // 전역 함수로 등록
   window.removeUserMovie = removeUserMovie;
   
-  // 사용자 이름 관리
   function loadUserName() {
     return localStorage.getItem("userName") || "";
   }
@@ -231,7 +351,6 @@ const defaultMovieData = {
   
   // 페이지 로드 시 초기화
   document.addEventListener("DOMContentLoaded", function() {
-    // URL 해시 확인하여 메인 섹션으로 직접 이동
     if (window.location.hash === '#main') {
       const savedUserName = loadUserName();
       if (savedUserName) {
